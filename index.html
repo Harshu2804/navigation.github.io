@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Map Navigation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🗺️ Interactive Map Navigation</h1>
+      <p>Click canvas to add nodes.<br />Drag from one node to another to create edges.<br />Double-click nodes to select start/end.</p>
+    </header>
+
+    <canvas id="mapCanvas" width="800" height="500"></canvas>
+
+    <div class="controls">
+      <button id="findPathBtn">Find Shortest Path</button>
+      <button id="resetBtn">Reset</button>
+      <p id="output"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
